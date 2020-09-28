@@ -13,9 +13,12 @@ output: html_document
 knitr::opts_chunk$set(echo=FALSE)
 ```
 
+<!--
+   You should change the working directory in the folder (here, "project_data") which contains the data.txt
+-->
 
 ```{r, readin}
-metdata <- read.table('/Users/taryntang/Desktop/INFO550/project/data.txt',header=T)
+metdata <- read.table('data.txt',header=T)
 met_intensity<-metdata[4:53]
 ```
 
