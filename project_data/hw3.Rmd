@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo=FALSE)
 ```
 
 <!--
-   You should change the working directory in the folder (here, "project_data") which contains the data.txt
+   You should change the working directory to the folder (here, "project_data" folder) which contains the data.txt file
 -->
 
 ```{r, readin}
@@ -56,13 +56,3 @@ final_data<-cbind(basic,final_met_int)
 ### Data cleaning
 
 1. After removing metabolic features which are not detected in at least 10% of all samples, there are totally `r ncol(final_met_int)` metabolic features.
-
-
-<!--
-
-Grades for students' participation:
-  Weijia Qian -- 1
-  Wenlu Ye -- 1
-  Courtney Gale -- 1
-  
--->
