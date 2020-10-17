@@ -1,4 +1,4 @@
-## report.html : Rule for making project report
+## R/report.html : Rule for making project report
 R/report.html: R/report.Rmd figs/*.png processed_data/*.txt raw_data/data.txt
 	Rscript -e "rmarkdown::render('R/report.Rmd')"
 
