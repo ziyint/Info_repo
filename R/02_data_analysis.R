@@ -1,5 +1,8 @@
 #! /usr/local/bin/Rscript
 
+library(Matrix)
+library(lme4)
+
 clean_data <- read.table('processed_data/clean_data.txt', header = T, sep = ",")
 
 # Total number of metaboloc features
