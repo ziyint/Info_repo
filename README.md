@@ -6,6 +6,7 @@ For my project, I will analyze `data.txt` in `raw_data` folder.
   * `process_data` folder contains all of processed data.
   * `R` folder contains R codes.
   * `figs` folder contains all of figures.
+  * `makefile` contains all rules for project.
 
 To analyze the data, you will need to install some `R` packages. These packages can be installed typing 
 
