@@ -21,12 +21,12 @@ To execute the analysis and generate the report, you can run
 make R/report.Rmd
 ```
 
-This will create a file called `report.html` in your `R` folder that contains the results.
+This will create a file called `report.html` in `R` folder that contains the results.
 
 
-## Information of rules in Makefile
+## Information of rules in makefile
 
-To get information of all rules in Makefile, you can run
+To get information of all rules in makefile, you can run
 
 ```bash
 make help
