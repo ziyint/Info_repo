@@ -19,7 +19,7 @@ make install
 To execute the analysis and generate the report, you can run
 
 ```bash
-make R/report.Rmd
+make R/report.html
 ```
 
 This will create a file called `report.html` in `R` folder that contains the results.
