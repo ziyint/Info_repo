@@ -30,5 +30,5 @@ build: Dockerfile
 
 ## help : Document rules
 .PHONY: help
-help: Makefile
+help: makefile
 	@sed -n 's/^##//p' $<
