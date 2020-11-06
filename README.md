@@ -19,7 +19,7 @@ Then you will see a `report.html` in your local `output` directory.
 To down load Docker iamge for this analysis from DockerHub, you should type:
 
 ```bash
-docker pull final_proj
+docker pull ziyint/final_proj
 ```
 
 To analyze the data, you will need to install some `R` packages. These packages can be installed typing (I have installed them in the Docker image already, you could skip this step)
