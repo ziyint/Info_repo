@@ -2,7 +2,7 @@
 
 For my project, I will analyze `data.txt` in `raw_data` folder. 
 
-briefly introduction of project structrue: 
+Briefly introduction of project structrue: 
   * `raw_data` folder contains all of raw data.
   * `R` folder contains R codes.
   * `process_data` folder will contain all of processed data.
@@ -15,11 +15,12 @@ briefly introduction of project structrue:
 
 ## Download Docker image for analysis from DockerHub
 
-Firstly, to down load Docker iamge for this analysis from DockerHub, you should type:
+Firstly, to download Docker iamge for this analysis from DockerHub, you should type:
 
 ```bash
 docker pull ziyint/final_proj
 ```
+
 
 ## Execute the analysis and generate the report
 
@@ -28,14 +29,14 @@ To execute the analysis and generate the report in `final_proj` Docker image as 
 ```bash
 docker run -v path/to/output:/project/output -it final_proj
 ```
-(notes: you should edit `/path/to/output` according to your local location of `output` directory)
+(Notes: you should edit `/path/to/output` according to your local location of `output` directory)
 
 Then you will see a `report.html` in your local `output` directory.
 
 
 ## If you want to perform the analysis in Docker image or local labtop by yourself, detailed instructions are as follows:
 
-Firstly, you should change working directory to `project` if  you are running `final_proj` Docker image.
+Firstly, you should change working directory to `project` if you are running the `final_proj` Docker image.
 
 You should install `R` packages for analysis. To do this, you can type: 
 ```bash
