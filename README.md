@@ -29,19 +29,30 @@ To execute the analysis and generate the report in `final_proj` Docker image as 
 ```bash
 docker run -v path/to/output:/project/output -it final_proj
 ```
-(Notes: you should edit `/path/to/output` according to your local location of `output` directory)
+(Notes: you should edit `path/to/output` according to your local location of `output` directory)
 
 Then you will see a `report.html` in your local `output` directory.
 
 
 ## If you want to perform the analysis in Docker image or local labtop by yourself, detailed instructions are as follows:
 
-Firstly, you should change working directory to `project` if you are running the `final_proj` Docker image.
+Firstly, you should run interactively with the `final_proj` Docker image and then change working directory to `project`.
 
-You should install `R` packages for analysis. To do this, you can type: 
+```bash
+docker run -it final_proj /bin/bash
+```
+In the `final_proj` Docker image, type:
+
+```bash
+cd project
+```
+
+If you want to do the analysis from local laptop, you should install `R` packages for analysis. To do this, you can type: 
+
 ```bash
 make install 
 ```
+
 (Notes: I have installed them in the Docker image already, you could skip this step if you are running the `final_proj` Docker image.)
 
 
@@ -57,6 +68,7 @@ To build the docker image for this analysis in local laptop, you can run
 ```bash
 make build
 ```
+(Notes: You can't build the docker image in the `final_proj` Docker image because Docker is not installed there)
 
 ## Information of rules in makefile
 
