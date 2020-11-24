@@ -24,10 +24,10 @@ docker pull ziyint/final_proj
 
 ## Execute the analysis and generate the report
 
-To execute the analysis and generate the report in `final_proj` Docker image as well as retrive the final report from the image, you should amount the `/project/output` directory in the image to local `output` directory. To do this, you should type: 
+To execute the analysis and generate the report in `ziyint/final_proj` Docker image as well as retrive the final report from the image, you should amount the `/project/output` directory in the image to local `output` directory. To do this, you should type: 
 
 ```bash
-docker run -v path/to/output:/project/output -it final_proj
+docker run -v path/to/output:/project/output -it ziyint/final_proj
 ```
 (Notes: you should edit `path/to/output` according to your local location of `output` directory)
 
@@ -36,12 +36,12 @@ Then you will see a `report.html` in your local `output` directory.
 
 ## If you want to perform the analysis in Docker image or local labtop by yourself, detailed instructions are as follows:
 
-Firstly, you should run interactively with the `final_proj` Docker image and then change working directory to `project`.
+Firstly, you should run interactively with the `ziyint/final_proj` Docker image and then change working directory to `project`.
 
 ```bash
-docker run -it final_proj /bin/bash
+docker run -it ziyint/final_proj /bin/bash
 ```
-In the `final_proj` Docker image, type:
+In the `ziyint/final_proj` Docker image, type:
 
 ```bash
 cd project
@@ -53,7 +53,7 @@ If you want to do the analysis from local laptop, you should install `R` package
 make install 
 ```
 
-(Notes: I have installed them in the Docker image already, you could skip this step if you are running the `final_proj` Docker image.)
+(Notes: I have installed them in the Docker image already, you could skip this step if you are running the `ziyint/final_proj` Docker image.)
 
 
 To execute the analysis and generate the analysis report:
@@ -68,7 +68,7 @@ To build the docker image for this analysis in local laptop, you can run
 ```bash
 make build
 ```
-(Notes: You can't build the docker image in the `final_proj` Docker image because Docker is not installed there)
+(Notes: You can't build the docker image in the `ziyint/final_proj` Docker image because Docker is not installed there)
 
 ## Information of rules in makefile
 
